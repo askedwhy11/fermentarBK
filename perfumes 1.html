@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recetas de Perfumes Naturales — Fermento</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+
+  <style>
+    .accordion {
+      margin: 12px 0;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+
+    .accordion-header {
+      width: 100%;
+      background: var(--bg-card);
+      border: none;
+      cursor: pointer;
+      padding: 16px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: left;
+      transition: var(--transition);
+    }
+
+    .accordion-header:hover {
+      background: var(--bg-card-hover);
+    }
+
+    .accordion-title {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      color: var(--gold);
+      letter-spacing: 0.01em;
+    }
+
+    .accordion-arrow {
+      color: var(--gold-dark);
+      font-size: 0.85rem;
+      transition: transform 0.3s ease;
+      flex-shrink: 0;
+      margin-left: 12px;
+    }
+
+    .accordion.open .accordion-arrow {
+      transform: rotate(180deg);
+    }
+
+    .accordion-body {
+      display: none;
+      padding: 20px 20px 24px;
+      border-top: 1px solid var(--border);
+    }
+
+    .accordion.open .accordion-body {
+      display: block;
+    }
+
+    .accordion-body table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.91rem;
+      margin-top: 14px;
+    }
+
+    .accordion-body th {
+      text-align: left;
+      padding: 6px 8px;
+      font-weight: 600;
+      color: var(--gold);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .accordion-body th:last-child,
+    .accordion-body th:nth-last-child(2) {
+      text-align: right;
+    }
+
+    .accordion-body td {
+      padding: 7px 8px;
+      color: var(--text-muted);
+      border-bottom: 1px solid rgba(58,95,74,0.3);
+    }
+
+    .accordion-body td:last-child,
+    .accordion-body td:nth-last-child(2) {
+      text-align: right;
+    }
+
+    .accordion-body tfoot td {
+      color: var(--gold);
+      font-weight: 600;
+      border-top: 1px solid var(--border);
+      border-bottom: none;
+    }
+
+    .accordion-body ol {
+      padding-left: 20px;
+      margin-top: 12px;
+      color: var(--text-muted);
+      line-height: 2;
+    }
+
+    .recipe-block {
+      margin-top: 18px;
+    }
+
+    .recipe-block-title {
+      font-family: var(--font-body);
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--gold);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .recipe-block p {
+      margin-bottom: 0;
+      font-size: 0.93rem;
+      color: var(--text-muted);
+    }
+
+    .nota-personal {
+      margin-top: 20px;
+      background: rgba(230,199,107,0.07);
+      border-left: 3px solid var(--gold-dark);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      padding: 14px 16px;
+      font-style: italic;
+      color: var(--text-muted);
+      font-size: 0.93rem;
+      line-height: 1.75;
+    }
+
+    .nota-personal strong {
+      color: var(--gold);
+      font-style: normal;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="menu">
+    <a href="index.html">Inicio</a>
+    <a href="fermento.html">Fermentación</a>
+    <a href="recetas.html">Recetas</a>
+    <a href="perfumes.html" class="active">Perfumes</a>
+    <a href="laboratorio.html">Herramientas</a>
+  </nav>
+
+  <div class="container">
+
+    <h1>Recetas de perfumes naturales</h1>
+
+    <p>Publiqué una guía básica de perfumería en Amazon. Para mi, recomendable pero no imprescindible... <em>un poco como el paraguas en Londres: puedes vivir sin él, pero tarde o temprano te arrepentirás.</em></p>
+
+    <p>Lo que sí encontrarás aquí, de forma completamente gratuita, son las recetas que he ido probando y que de verdad me han gustado. Sin filtros, sin trampa. Aquí no encontrarás publicidad de Chanel nº5, entre otras cosas porque ellos tampoco me hacen publicidad a mí.</p>
+
+    <p>Y es que los aromas hechos en casa tienen algo que los industriales no pueden comprar: tienen historia. El mío nació en mi cocina, viajó por mi jardín y se instaló en las muñecas de mi familia sin más . La reacción en casa fue de esas que no tienen precio: ese silencio inicial seguido de un <em>"...¿esto lo has hecho tú?"</em> con los ojos muy abiertos.</p>
+
+    <p>Huelen bien. Duran. Y son de una calidad que sorprende, incluso a quien los hace.</p>
+
+    <p>Hay algo profundamente satisfactorio en crear un perfume con plantas que tú misma has recogido, cultivado, o simplemente encontrado en tu entorno, aunque tus vecinos crean que simplemente sales a hacer cosas raras entre los arbustos al amanecer.</p>
+
+    <p>La mayoría de los ingredientes hay que comprarlos, claro. Pero sigue siendo considerablemente más barato que Dior, y bastante más interesante que Netflix. Y quién sabe... no descarto que algún día alguno de estos perfumes acabe en manos de alguien que no sea de mi familia.</p>
+
+    <p class="bridge">De momento, empecemos por las recetas.</p>
+
+    <div class="technical">
+      <strong>Índice por nota de corazón</strong>
+      <ul style="list-style:none; padding:0 0 0 8px; margin-top:12px; display:flex; flex-wrap:wrap; gap:10px;">
+        <li><a href="#lavanda" style="color:var(--gold); text-decoration:none;">🌿 Basadas en lavanda</a></li>
+        <li><a href="#ylang" style="color:var(--gold); text-decoration:none;">🌸 Basadas en ylang ylang</a></li>
+        <li><a href="#jazmin" style="color:var(--gold); text-decoration:none;">🤍 Basadas en jazmín</a></li>
+        <li><a href="#vetiver" style="color:var(--gold); text-decoration:none;">🌱 Basadas en vetiver</a></li>
+      </ul>
+    </div>
+
+
+    <!-- LAVANDA -->
+    <h2 id="lavanda">🌿 Basadas en lavanda</h2>
+
+    <p class="bridge">La lavanda es quizás el punto de partida más generoso para quien empieza. Versátil, equilibrada, y con esa rara virtud de funcionar tanto sola como en compañía de casi cualquier otro ingrediente.</p>
+
+    <div class="accordion">
+      <button class="accordion-header" onclick="toggleAccordion(this)">
+        <span class="accordion-title">🍋 Pomelo Punch</span>
+        <span class="accordion-arrow">▼</span>
+      </button>
+      <div class="accordion-body">
+
+        <p>Una fórmula fresca y luminosa donde la lavanda actúa como puente calmante entre la chispa cítrica de arriba y la madera serena de abajo. El cardamomo es opcional, pero si lo tienes úsalo: añade un punto especiado que lo hace más interesante.</p>
+
+        <div class="recipe-block">
+          <div class="recipe-block-title">Datos de la fórmula</div>
+          <p>Volumen total: <strong style="color:var(--text-soft);">10 ml</strong> &nbsp;·&nbsp; Concentración: <strong style="color:var(--text-soft);">16%</strong> &nbsp;·&nbsp; Esencias totales: <strong style="color:var(--text-soft);">1,6 ml</strong></p>
+          <p style="margin-top:6px;"><em>Usa gotero preciso o pipeta — con las esencias, pasarse es fácil e irreversible.</em></p>
+        </div>
+
+        <div class="recipe-block">
+          <div class="recipe-block-title">Ingredientes — en orden de aplicación</div>
+          <table>
+            <thead>
+              <tr>
+                <th>Nota</th>
+                <th>Ingrediente</th>
+                <th>ml</th>
+                <th>gotas</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Base</td><td>Cedro</td><td>0,50</td><td>≈ 10</td></tr>
+              <tr><td>Corazón</td><td>Petitgrain</td><td>0,80</td><td>≈ 16</td></tr>
+              <tr><td>Corazón</td><td>Lavanda</td><td>0,50</td><td>≈ 10</td></tr>
+              <tr><td><em>Corazón</em></td><td><em>Cardamomo (opcional)</em></td><td><em>0,10–0,15</em></td><td><em>2–3</em></td></tr>
+              <tr><td>Cabeza</td><td>Bergamota</td><td>0,60</td><td>≈ 12</td></tr>
+              <tr><td>Cabeza</td><td>Pomelo</td><td>0,40</td><td>≈ 8</td></tr>
+            </tbody>
+            <tfoot>
+              <tr><td colspan="2">Total</td><td>1,60</td><td>56–59</td></tr>
+            </tfoot>
+          </table>
+          <p style="margin-top:10px; font-size:0.85rem;"><em>Sin cardamomo: suma esas gotas a petitgrain o bergamota. El total varía según el tamaño del gotero.</em></p>
+        </div>
+
+        <div class="recipe-block">
+          <div class="recipe-block-title">Procedimiento</div>
+          <ol>
+            <li>En un frasco limpio de 10–15 ml (ámbar, preferiblemente), añade las esencias <strong style="color:var(--text-soft);">en orden: base → corazón → cabeza.</strong></li>
+            <li>Remueve con palillo de madera o varilla de vidrio. Nada metálico.</li>
+            <li>Añade el alcohol poco a poco removiendo: vodka neutro o alcohol etílico 96°. Completa hasta 10 ml.</li>
+            <li>Cierra, agita con cariño y etiqueta: <em>"Pomelo Punch – 16% – [fecha]"</em>.</li>
+            <li>Guarda en lugar fresco, oscuro y seco. Agita cada 2–3 días.</li>
+          </ol>
+        </div>
+
+        <div class="recipe-block">
+          <div class="recipe-block-title">Maceración y ajuste</div>
+          <p><strong style="color:var(--text-soft);">Mínimo 2 semanas</strong> antes de probar en papel y en piel. Lo ideal son 4–6 semanas para que las notas se integren de verdad.</p>
+          <p style="margin-top:8px;">Anota qué te gusta y qué cambiarías: más pomelo para chispa, más cedro para profundidad.</p>
+          <p style="margin-top:8px;"><strong style="color:var(--text-soft);">Si te enamora:</strong> multiplicar a 300 ml es sencillo — ×30 las cantidades (≈ 48 ml de esencias en total). Petitgrain y bergamota serán las que más tendrás que reponer.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <p class="bridge" style="opacity:0.5; font-size:0.9rem; margin-top:32px;">— Más recetas próximamente —</p>
+
+
+    <!-- YLANG YLANG -->
+    <h2 id="ylang">🌸 Basadas en ylang ylang</h2>
+
+    <p class="bridge">El ylang ylang no es para tímidos. Intenso, floral, con ese punto casi embriagador que lo hace único. Usado con criterio, transforma cualquier mezcla en algo memorable.</p>
+
+    <div class="accordion">
+      <button class="accordion-header" onclick="toggleAccordion(this)">
+        <span class="accordion-title">🌸 MYlang — perfume de ocasión</span>
+        <span class="accordion-arrow">▼</span>
+      </button>
+      <div class="accordion-body">
+
+        <p>Un perfume sensual y envolvente donde el ylang ylang es el protagonista absoluto. Los cítricos lo abren sin robarle el papel, y el cedro evita que caiga en lo dulzón. Para diario, tu lavanda. Para cuando quieres que el mundo se pare a olerte, este.</p>
+
+        <div class="recipe-block">
+          <div class="recipe-block-title">Datos de la fórmula</div>
+          <p>Volumen total: <strong style="color:var(--text-soft);">30 ml</strong> &nbsp;·&nbsp; Concentración: <strong style="color:var(--text-soft);">12%</strong> &nbsp;·&nbsp; Esencias totales: <strong style="color:var(--text-soft);">6 ml</strong></p>
+          <p style="margin-top:6px;"><em>Alcohol: de flor de almendro. Rinde unos 120–150 usos con 2–3 pulverizaciones diarias.</em></p>
+        </div>
+
+        <div class="recipe-block">
+          <div class="recipe-block-title">Ingredientes — en orden de aplicación</div>
+          <table>
+            <thead>
+              <tr>
+                <th>Nota</th>
+                <th>Ingrediente</th>
+                <th>ml</th>
+                <th>gotas</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Corazón</td><td>Ylang ylang extra</td><td>3,60</td><td>≈ 72</td></tr>
+              <tr><td>Base</td><td>Cedro</td><td>0,60</td><td>≈ 12</td></tr>
+              <tr><td>Cabeza</td><td>Bergamota</td><td>0,90</td><td>≈ 18</td></tr>
+              <tr><td>Cabeza</td><td>Pomelo</td><td>0,60</td><td>≈ 12</td></tr>
+              <tr><td>Corazón</td><td>Petitgrain</td><td>0,30</td><td>≈ 6</td></tr>
+            </tbody>
+            <tfoot>
+              <tr><td colspan="2">Total esencias</td><td>6,00</td><td>≈ 120</td></tr>
+            </tfoot>
+          </table>
+          <p style="margin-top:10px; font-size:0.85rem;"><em>Completa hasta 30 ml con alcohol de farmacia o vodka. El alcohol de almendro lo hice yo misma a mediados de febrero, simplemente dejando macerar las flores. No es imprescindible.</em></p>
+        </div>
+
+        <div class="recipe-block">
+          <div class="recipe-block-title">Procedimiento</div>
+          <ol>
+            <li>Mide el ylang primero en un vasito pequeño.</li>
+            <li>Añade los cítricos y el petitgrain.</li>
+            <li>Incorpora el cedro al final, que es más denso.</li>
+            <li>Revuelve bien, tapa y deja reposar 48–72h en oscuridad. El ylang se abre y se redondea.</li>
+            <li>Filtra con un pañuelo de algodón si ves partículas.</li>
+            <li>Añade el alcohol poco a poco hasta completar 30 ml.</li>
+            <li>Etiqueta: <em>"Ylang – 12% – [fecha]"</em> y guarda en lugar fresco y oscuro.</li>
+          </ol>
+        </div>
+
+        <div class="recipe-block">
+          <div class="recipe-block-title">Maceración y duración</div>
+          <p>Proyecta 2–3 horas, se queda en piel 6–8. Con uso diario moderado dura 6–8 meses.</p>
+          <p style="margin-top:8px;">Si al probarlo en piel el ylang grita demasiado, quita 10 gotas y sustitúyelas por más bergamota. Pero con 3,6 ml ya es intenso sin ser invasivo.</p>
+        </div>
+
+        <div class="nota-personal">
+          <strong>Una nota personal:</strong> el ylang extra puede ser muy dominante — pegajoso y extremadamente dulce. Yo lo modifiqué añadiendo 3 gotas más de petitgrain y 2 de cedro al final, y se volvió encantador.<br><br>
+          Esto es algo importante que conviene recordar: si un perfume no te gusta, no lo desperdicies. Puedes equilibrarlo y transformarlo. El amargo del petitgrain neutraliza el dulzón excesivo del ylang; el cedro añade madera y robustez. Con paciencia y pequeños ajustes, un perfume que no te convencía puede convertirse en el que más usas.
+        </div>
+
+      </div>
+    </div>
+
+    <p class="bridge" style="opacity:0.5; font-size:0.9rem; margin-top:32px;">— Más recetas próximamente —</p>
+
+
+    <!-- JAZMÍN -->
+    <h2 id="jazmin">🤍 Basadas en jazmín</h2>
+    <p class="bridge">El jazmín tiene algo difícil de explicar: huele a noche, a verano, a algo que ya conoces aunque no sepas de dónde. Trabajar con él en casa es un pequeño lujo.</p>
+    <p class="bridge" style="opacity:0.5; font-size:0.9rem;">— Próximamente —</p>
+
+
+    <!-- VETIVER -->
+    <h2 id="vetiver">🌱 Basadas en vetiver</h2>
+    <p class="bridge">El vetiver es tierra, madera, profundidad. La nota que ancla un perfume y lo hace durar. No es el protagonista más obvio, pero sin él muchas composiciones perderían su alma.</p>
+    <p class="bridge" style="opacity:0.5; font-size:0.9rem;">— Próximamente —</p>
+
+  </div>
+
+  <div class="footer-leaves" style="background-image: url('image/hojas.jpeg');"></div>
+
+  <script>
+    function toggleAccordion(header) {
+      const accordion = header.parentElement;
+      accordion.classList.toggle('open');
+    }
+  </script>
+
+</body>
+</html>
