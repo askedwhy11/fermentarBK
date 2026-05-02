@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temperatura y fermentación · Soberanía intestinal</title>
+  <link rel="stylesheet" href="../../styles/styles.css">
+  <style>
+    .temp-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0;
+      font-size: 0.9rem;
+      font-family: var(--font-body);
+    }
+    .temp-table thead tr {
+      background: rgba(58, 95, 74, 0.4);
+    }
+    .temp-table th {
+      padding: 12px 14px;
+      text-align: left;
+      color: var(--gold);
+      font-weight: 600;
+      border-bottom: 1px solid var(--border);
+      letter-spacing: 0.04em;
+      font-size: 0.82rem;
+      text-transform: uppercase;
+    }
+    .temp-table td {
+      padding: 11px 14px;
+      border-bottom: 1px solid rgba(58, 95, 74, 0.3);
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+    .temp-table tr:hover td {
+      background: rgba(58, 95, 74, 0.12);
+    }
+    .temp-table td:first-child {
+      font-style: italic;
+      color: var(--text-soft);
+    }
+    .temp-table td strong {
+      color: var(--gold);
+    }
+    @media (max-width: 600px) {
+      .temp-table th, .temp-table td {
+        padding: 9px 10px;
+        font-size: 0.82rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="menu">
+    <a href="../../index.html">Home</a>
+    <a href="../../fermento.html" class="active">Fermentación</a>
+    <a href="../../butirato.html">Butirato</a>
+    <a href="../../recetas.html">Recetas</a>
+    <a href="../../perfumes.html">Perfumes</a>
+    <a href="../../laboratorio.html">Herramientas</a>
+  </div>
+
+  <section class="container bloque">
+
+    <h1>Temperatura y crecimiento microbiano</h1>
+
+    <p>Cada microorganismo necesita unas condiciones concretas para desarrollarse. En fermentación, la temperatura es uno de los factores más importantes — y también uno de los más fáciles de controlar mal.</p>
+
+    <p class="highlight">La estabilidad importa más que el valor exacto. Una temperatura constante ligeramente baja da mejores resultados que una temperatura "correcta" que sube y baja.</p>
+
+    <h2>🌡️ Rangos orientativos por microorganismo</h2>
+
+    <div class="technical" style="padding: 0; overflow-x: auto;">
+      <table class="temp-table">
+        <thead>
+          <tr>
+            <th>Microorganismo</th>
+            <th>Rango ideal</th>
+            <th>Notas</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Lactobacillus reuteri</td>
+            <td><strong>36–38 °C</strong></td>
+            <td>Temperatura corporal. Muy sensible al calor excesivo.</td>
+          </tr>
+          <tr>
+            <td>Lactobacillus gasseri</td>
+            <td><strong>36–38 °C</strong></td>
+            <td>Similar al reuteri. Estabilidad constante.</td>
+          </tr>
+          <tr>
+            <td>Lactobacillus crispatus</td>
+            <td><strong>35–37 °C</strong></td>
+            <td>Rango algo más bajo. Buena estabilidad en fermentación láctica.</td>
+          </tr>
+          <tr>
+            <td>Lactobacillus casei</td>
+            <td><strong>30–37 °C</strong></td>
+            <td>Más tolerante a variaciones de temperatura.</td>
+          </tr>
+          <tr>
+            <td>Bifidobacterium longum</td>
+            <td><strong>36–38 °C</strong></td>
+            <td>Anaerobio estricto. Prefiere entornos sin oxígeno.</td>
+          </tr>
+          <tr>
+            <td>Bacillus subtilis</td>
+            <td><strong>25–35 °C</strong></td>
+            <td>Más flexible. Se usa en fermentaciones tipo natto.</td>
+          </tr>
+          <tr>
+            <td>Saccharomyces boulardii</td>
+            <td><strong>25–37 °C</strong></td>
+            <td>Hongo. Tolera bien rangos amplios.</td>
+          </tr>
+          <tr>
+            <td>Aspergillus oryzae (koji)</td>
+            <td><strong>28–32 °C</strong></td>
+            <td>Rango bajo y húmedo. Fermentación en sustrato sólido.</td>
+          </tr>
+          <tr>
+            <td>Bacterias lácticas (vegetales)</td>
+            <td><strong>18–24 °C</strong></td>
+            <td>Chucrut, kimchi. Temperatura ambiente fresca.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="technical">
+      <strong>⚠️ Nota importante</strong>
+      <p>Estas temperaturas son rangos orientativos basados en condiciones habituales de fermentación casera y literatura microbiológica general. Cada microorganismo puede comportarse de forma diferente según el alimento base, la cepa específica, la estabilidad del entorno y el tiempo de fermentación. Esta tabla es una guía de referencia, no un valor absoluto.</p>
+    </div>
+
+    <h2>🧠 Por qué la temperatura cambia el resultado</h2>
+
+    <ul>
+      <li>
+        <strong>Demasiado calor</strong> — las proteínas de la bacteria se desnaturalizan. El cultivo muere o queda muy debilitado. La fermentación se detiene o da resultados inconsistentes.
+      </li>
+      <li>
+        <strong>Demasiado frío</strong> — el metabolismo bacteriano se ralentiza. La fermentación ocurre, pero muy despacio. Puede cambiar el perfil de sabor y la textura final.
+      </li>
+      <li>
+        <strong>Fluctuaciones</strong> — son el enemigo silencioso. Una yogurtera que calienta en ciclos puede crear microambientes donde el cultivo avanza y retrocede, con resultados impredecibles.
+      </li>
+    </ul>
+
+    <h2>🏡 En fermentación casera</h2>
+
+    <p>El éxito no depende solo de los ingredientes, sino de mantener un entorno constante. Para fermentos lácticos como el <em>L. reuteri</em> o el <em>L. gasseri</em>, un termostato regulable marca una diferencia enorme respecto a una yogurtera básica de temperatura fija.</p>
+
+    <p>Pequeños trucos que ayudan:</p>
+
+    <div class="technical">
+      <ul style="padding-left: 18px; line-height: 2.2;">
+        <li>Añadir agua en la base de la yogurtera para distribuir el calor de forma uniforme</li>
+        <li>Colocar un trapo entre la base y los tarros para evitar puntos calientes directos</li>
+        <li>No abrir la yogurtera durante la fermentación — cada apertura baja la temperatura</li>
+        <li>Dejar los tarros reposar a temperatura ambiente 30 minutos antes de empezar</li>
+      </ul>
+    </div>
+
+    <p class="bridge">La fermentación no es solo química — es también escuchar el proceso y ajustarlo con el tiempo. Cada tanda enseña algo.</p>
+
+    <p>← <a href="fermento.html" style="color:#c49b3f; font-weight:bold;">Volver a Fermentación</a></p>
+
+  </section>
+
+  <div class="footer-leaves" style="background-image: url('../../image/hojas.jpeg');"></div>
+
+</body>
+</html>

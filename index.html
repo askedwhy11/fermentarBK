@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Universo Fermentado</title>
+  <link rel="stylesheet" href="styles/styles.css">
+
+  <style>
+    /* --- Estilos específicos del index --- */
+
+    .hero {
+      text-align: center;
+      padding: 48px 24px 12px;
+    }
+
+    .hero h1 {
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      color: var(--text-muted);
+      font-size: 1rem;
+      margin-bottom: 0;
+    }
+
+    /* Tarjetas del menú */
+    .cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      padding: 32px 24px 0;
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px 16px;
+      text-align: center;
+      text-decoration: none;
+      color: var(--text);
+      transition: var(--transition);
+    }
+
+    .card:hover {
+      background: var(--bg-card-hover);
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(230, 199, 107, 0.15);
+      border-color: var(--gold-dark);
+    }
+
+    .card-emoji {
+      font-size: 1.8rem;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .card-title {
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      color: var(--gold);
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .card-desc {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+
+    /* Banner de burbujas */
+    .cta-banner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: var(--max-width);
+      margin: 36px auto 0;
+      padding: 0 24px;
+      text-decoration: none;
+    }
+
+    .cta-inner {
+      width: 100%;
+      height: 130px;
+      background: linear-gradient(rgba(10,31,20,0.48), rgba(10,31,20,0.72)),
+                  url('image/burbujas.gif') center/cover no-repeat;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 10px 36px rgba(230, 199, 107, 0.2);
+      border: 1px solid var(--border);
+      transition: var(--transition);
+    }
+
+    .cta-banner:hover .cta-inner {
+      transform: translateY(-3px);
+      box-shadow: 0 14px 45px rgba(230, 199, 107, 0.32);
+      border-color: var(--gold-dark);
+    }
+
+    .cta-text {
+      font-family: var(--font-display);
+      font-size: 1.3rem;
+      color: var(--gold);
+      text-align: center;
+    }
+
+    .cta-text span {
+      display: block;
+      font-family: var(--font-body);
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+
+    @media (max-width: 600px) {
+      .cards {
+        gap: 10px;
+        padding: 24px 16px 0;
+      }
+
+      .card {
+        padding: 16px 12px;
+      }
+
+      .card-title {
+        font-size: 1rem;
+      }
+
+      .cta-banner {
+        padding: 0 16px;
+      }
+
+      .cta-inner {
+        height: 110px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- MENÚ -->
+  <nav class="menu">
+    <a href="index.html" class="active">Home</a>
+    <a href="fermento.html">Fermentación</a>
+    <a href="recetas.html">Recetas</a>
+    <a href="perfumes.html">Perfumes</a>
+    <a href="laboratorio.html">Herramientas</a>
+  </nav>
+
+  <!-- HERO -->
+  <div class="hero">
+    <h1>Universo Fermentado</h1>
+    
+    <p>Fermentación&nbsp;·&nbsp;salud&nbsp;·&nbsp;aromas naturales&nbsp;</p>
+  </div>
+
+  <!-- TARJETAS -->
+  <div class="cards">
+
+    <a class="card" href="fermento.html">
+      <span class="card-emoji">🫘</span>
+      <span class="card-title">Fermentación</span>
+      <span class="card-desc">procesos, técnicas y salud intestinal</span>
+    </a>
+
+    <a class="card" href="recetas.html">
+      <span class="card-emoji">🥗</span>
+      <span class="card-title">Recetas</span>
+      <span class="card-desc">bowls y platos vivos</span>
+    </a>
+
+    <a class="card" href="laboratorio.html">
+      <span class="card-emoji">🫙</span>
+      <span class="card-title">Herramientas</span>
+      <span class="card-desc">fermentadoras y yogurteras</span>
+    </a>
+
+    <a class="card" href="perfumes.html">
+      <span class="card-emoji">🌹</span>
+      <span class="card-title">Perfumes</span>
+      <span class="card-desc">recetas personales sin tóxicos</span>
+    </a>
+
+  </div>
+
+  <!-- BANNER BURBUJAS -->
+  <a href="fermento.html" class="cta-banner">
+    <div class="cta-inner">
+      <div class="cta-text">
+        Entrar al mundo base
+        <span>fermentación · microbiota · salud</span>
+      </div>
+    </div>
+  </a>
+
+  <!-- PIE DE PÁGINA -->
+  <div class="footer-leaves" style="background-image: url('image/hojas.jpeg');"></div>
+
+</body>
+</html>
