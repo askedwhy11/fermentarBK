@@ -1,161 +1,62 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bastones Ginger Glow</title>
+---
+layout: default
+title: Bastones Ginger Glow
+---
 
-  <link rel="stylesheet" href="../styles/styles.css">
-
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-
-    body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: var(--font-body);
-      line-height: 1.7;
-    }
-
-    h1, h2, h3 {
-      font-family: var(--font-display);
-      color: var(--gold);
-      margin-bottom: 20px;
-    }
-
+<style>
     p { margin-bottom: 16px; }
-
-    .menu {
-      display: flex;
-      gap: 10px;
-      padding: 20px 15px;
-      flex-wrap: wrap;
-      justify-content: center;
-      background: rgba(10, 31, 20, 0.92);
-      position: sticky;
-      top: 0;
-    }
-
-    .menu a {
-      text-decoration: none;
-      padding: 11px 18px;
-      border-radius: 9999px;
-      background: linear-gradient(135deg, #c49b3f, #e6c76b);
-      color: #0a1f14;
-      font-family: var(--font-body);
-      font-weight: 700;
-    }
-      .menu a.active {
-background: var(--accent);
-  color: white;
-  border: 2px solid #c9a84c;  /* ← añade esta línea */
-}    
-    }
-
-    .back {
-      display: inline-block;
-      margin: 20px;
-      padding: 10px 16px;
-      background: var(--accent);
-      color: white;
-      text-decoration: none;
-      border-radius: 9999px;
-      font-family: var(--font-body);
-      font-weight: bold;
-    }
-
-    .container {
-      max-width: 700px;
-      margin: 0 auto;
-      padding: 10px 20px 40px;
-    }
-
     .section { margin-bottom: 35px; }
-
-    ul, ol {
-      margin-left: 20px;
-      margin-bottom: 16px;
-    }
-
-    li {
-      margin-bottom: 8px;
-      font-family: var(--font-body);
-    }
-
-    .highlight {
-      color: var(--gold);
-      font-weight: bold;
-    }
-
     .box {
       border-left: 3px solid var(--accent);
       padding-left: 12px;
       margin-top: 10px;
     }
-
     .secret {
       border-left: 3px solid var(--gold);
       background: rgba(230, 199, 107, 0.05);
       padding: 15px;
       border-radius: 8px;
     }
-  </style>
-</head>
+</style>
 
-<body>
+<a class="back" href="/recetas.html">← Volver a recetas</a>
 
-  <div class="menu">
-    <a href="../index.html">Home</a>
-    <a href="../fermento.html">Fermentación</a>
-    <a href="../recetas.html" class="active">Recetas</a>
-    <a href="../perfumes.html">Perfumes</a>
-    <a href="../laboratorio.html">Herramientas</a>
+<div class="container">
+
+  <h1>🥕 Bastones "Ginger Glow"</h1>
+
+  <div class="section">
+    <p class="box">Crujientes, picantes y cargados de enzimas.<br><br>Transforman la zanahoria en un snack vivo con textura firme y sabor ácido equilibrado.</p>
   </div>
 
-  <a class="back" href="../recetas.html">← Volver a recetas</a>
-
-  <div class="container">
-
-    <h1>🥕 Bastones "Ginger Glow"</h1>
-
-    <div class="section">
-      <p class="box">
-        Crujientes, picantes y cargados de enzimas.<br><br>
-        Transforman la zanahoria en un snack vivo con textura firme y sabor ácido equilibrado.
-      </p>
-    </div>
-
-    <div class="section">
-      <h2>🛒 Ingredientes</h2>
-      <ul>
-        <li>3–4 zanahorias en bastones</li>
-        <li>2 cm de jengibre fresco laminado</li>
-        <li>Cúrcuma fresca (opcional)</li>
-        <li>Agua filtrada</li>
-        <li>Sal marina (2.5%)</li>
-        <li>Semillas de cilantro o pimienta (opcional)</li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <h2>🥣 Preparación</h2>
-      <ol>
-        <li>Coloca el jengibre en el fondo del tarro</li>
-        <li>Añade las zanahorias bien compactas</li>
-        <li>Cubre con salmuera al 2.5%</li>
-        <li>Fermenta 4–6 días a temperatura ambiente</li>
-        <li>Guarda en frío cuando esté listo</li>
-      </ol>
-    </div>
-
-    <div class="section secret">
-      <h2>💡 Secreto del crunch</h2>
-      <p>
-        Añade una hoja de roble, vid o té negro.
-        Sus taninos mantienen la textura firme durante la fermentación.
-      </p>
-    </div>
-
+  <div class="section">
+    <h2>🛒 Ingredientes</h2>
+    <ul>
+      <li>3–4 zanahorias en bastones</li>
+      <li>2 cm de jengibre fresco laminado</li>
+      <li>Cúrcuma fresca (opcional)</li>
+      <li>Agua filtrada</li>
+      <li>Sal marina (2.5%)</li>
+      <li>Semillas de cilantro o pimienta (opcional)</li>
+    </ul>
   </div>
-<div class="footer-leaves" style="background-image: url('.image/hojas.jpeg');"></div></body>
-</html>
+
+  <div class="section">
+    <h2>🥣 Preparación</h2>
+    <ol>
+      <li>Coloca el jengibre en el fondo del tarro</li>
+      <li>Añade las zanahorias bien compactas</li>
+      <li>Cubre con salmuera al 2.5%</li>
+      <li>Fermenta 4–6 días a temperatura ambiente</li>
+      <li>Guarda en frío cuando esté listo</li>
+    </ol>
+  </div>
+
+  <div class="section secret">
+    <h2>💡 Secreto del crunch</h2>
+    <p>Añade una hoja de roble, vid o té negro. Sus taninos mantienen la textura firme durante la fermentación.</p>
+  </div>
+
+</div>
+
+<div class="footer-leaves" style="background-image: url('/image/hojas.jpeg');"></div>
