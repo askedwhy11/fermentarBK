@@ -1,90 +1,11 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Herramientas de Fermentación</title>
+---
+layout: default
+title: Herramientas
+---
 
-  <link rel="stylesheet" href="styles/styles.css">
-
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-
-    body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: var(--font-body);
-      line-height: 1.7;
-    }
-
-    h1, h2, h3 {
-      font-family: var(--font-display);
-      color: var(--gold);
-      margin-bottom: 20px;
-    }
-
-    h3 {
-      font-size: 1.2rem;
-      margin-top: 24px;
-    }
-
+<style>
+    h3 { font-size: 1.2rem; margin-top: 24px; }
     p { margin-bottom: 16px; }
-
-    /* MENÚ */
-    .menu {
-      display: flex;
-      gap: 10px;
-      padding: 20px 15px;
-      flex-wrap: wrap;
-      justify-content: center;
-      background: rgba(10, 31, 20, 0.92);
-      position: sticky;
-      top: 0;
-    }
-
-    .menu a {
-      text-decoration: none;
-      padding: 11px 18px;
-      border-radius: 9999px;
-      background: linear-gradient(135deg, #c49b3f, #e6c76b);
-      color: #0a1f14;
-      font-family: var(--font-body);
-      font-weight: 700;
-    }
-
-    .menu a.active {
-      background: var(--accent);
-      color: white;
-    }
-
-    /* CONTENEDOR */
-    .container {
-      max-width: 700px;
-      margin: 0 auto;
-      padding: 30px 20px 60px;
-    }
-
-    /* BLOQUES */
-    .bloque {
-      margin-bottom: 50px;
-      padding-bottom: 40px;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .bloque:last-child {
-      border-bottom: none;
-    }
-
-    ul {
-      margin-left: 20px;
-      margin-bottom: 16px;
-    }
-
-    li {
-      margin-bottom: 8px;
-      font-family: var(--font-body);
-    }
-
     .quote {
       font-family: var(--font-display);
       font-style: italic;
@@ -95,164 +16,103 @@
       margin: 32px 0;
       line-height: 1.7;
     }
-  </style>
-</head>
+</style>
 
-<body>
+<div class="container">
 
-  <!-- MENÚ -->
-  <div class="menu">
-    <a href="index.html">Home</a>
-    <a href="fermento.html">Fermentación</a>
-    <a href="recetas.html">Recetas</a>
-    <a href="perfumes.html">Perfumes</a>
-    <a href="laboratorio.html" class="active">Herramientas</a>
-  </div>
+  <section class="bloque">
+    <h2>Antes de elegir herramientas</h2>
+    <p>Antes de comparar máquinas, técnicas o resultados, merece la pena detenerse un momento.</p>
+    <p>Vivimos en una época donde la tecnología parece ofrecernos siempre el camino más rápido, más limpio y más cómodo. Y, sin embargo, en ese proceso, a veces olvidamos algo esencial: el conocimiento no empieza en las máquinas.</p>
+    <p>Empieza en nosotros.</p>
+    <p>En nuestras manos. En nuestros sentidos. En la capacidad de observar, oler, tocar y entender lo que tenemos delante.</p>
+    <p>La tecnología puede ser una aliada extraordinaria cuando tiene un propósito claro. Pero cuando se utiliza sin conciencia, corre el riesgo de sustituir experiencias que, en realidad, son la base del aprendizaje.</p>
+    <p>Fermentar no es solo transformar alimentos. Es aprender a leer procesos vivos. Es desarrollar intuición. Es reconectar con ritmos que no necesitan electricidad para existir.</p>
+    <p><strong>Que la tecnología acompañe al conocimiento, pero que nunca lo reemplace.</strong></p>
+  </section>
 
-  <div class="container">
+  <section class="bloque">
+    <h2>Fermentar a mano vs. con máquina</h2>
+    <h3>Lo que ganas con la máquina</h3>
+    <ul>
+      <li>Temperatura constante y precisa</li>
+      <li>Menos fallos al principio</li>
+      <li>Comodidad total</li>
+      <li>Resultados repetibles</li>
+      <li>Práctica cuando hay poco tiempo o grandes cantidades</li>
+    </ul>
+    <p>No hay nada incorrecto en esto. Es una herramienta útil.</p>
+    <h3>Lo que cedes sin darte cuenta</h3>
+    <ul>
+      <li><strong>El ritual:</strong> tocar, observar, ajustar</li>
+      <li><strong>Diversidad microbiana:</strong> menos variación, menos riqueza</li>
+      <li><strong>Intuición:</strong> se aprende menos del proceso</li>
+      <li><strong>Simplicidad:</strong> dependencia de la máquina</li>
+      <li><strong>Sabor:</strong> menos complejo, menos vivo</li>
+    </ul>
+    <p>La máquina te da consistencia. El tarro te da presencia.</p>
+    <p>No se trata de elegir uno para siempre, sino de saber qué necesitas en cada momento.</p>
+  </section>
 
-    <!-- BLOQUE 1 — existente -->
-    <section class="bloque">
-      <h2>Antes de elegir herramientas</h2>
+  <section class="bloque">
+    <h2>Higiene: respeto al proceso vivo</h2>
+    <p>Fermentar no es cocinar en un quirófano. La higiene en la fermentación no es una obsesión por la esterilización — es algo más sutil y más interesante: es respeto al proceso vivo.</p>
+    <p>Demasiado limpio mata lo bueno. Demasiado sucio invita a lo malo. El equilibrio es el arte.</p>
+    <p>La lejía y los jabones antibacterianos fuertes no distinguen entre microbios patógenos y los que llevas cultivando con cariño. Los eliminan todos sin preguntar. Lo que necesitas es agua caliente y vinagre blanco, o jabón neutro sin perfume. Limpiar sin agredir.</p>
+    <p>Y esto se extiende a algo que casi nadie menciona: <strong>los trapos</strong>. Un trapo lavado con detergente perfumado y suavizante huele a química — y esa química llega a tu fermento. Para secar tarros, filtrar líquidos o tapar una kombucha, los trapos tienen que ser neutros, sin olor. Los míos los lavo frotando con agua y vinagre, o simplemente los reservo ya limpios de lavados anteriores sin productos. Tengo trapos específicos para fermentación y perfumería — trapos que no huelen a nada, porque cuando filtras un alcohol o cubres un cultivo vivo, cualquier residuo químico es un intruso.</p>
+    <div class="quote">Limpias el recipiente como limpias tu mente antes de meditar: quitas lo viejo para dar espacio a lo nuevo.</div>
+  </section>
 
-      <p>Antes de comparar máquinas, técnicas o resultados, merece la pena detenerse un momento.</p>
+  <section class="bloque">
+    <h2>Los tarros: tu templo de vidrio</h2>
+    <p>El vidrio lleva con nosotros miles de años y sigue siendo imbatible. No reacciona con los ácidos de la fermentación, no absorbe olores, no cede sustancias extrañas al cultivo. Y lo ves todo — el color, la textura, las burbujas, el momento exacto en que algo empieza a vivir dentro.</p>
+    <p>Para experimentar, tarros pequeños de 250–500 ml. Para producción habitual, 500 ml a 1 litro. Los tarros de conserva reciclados funcionan perfectamente — lávalos con agua hirviendo o ponlos diez minutos en el horno a 100 °C y están listos.</p>
+    <h3>Sobre las tapas</h3>
+    <ul>
+      <li><strong>Tapa hermética cerrada</strong> — para fermentos lácticos como el reuteri o el gasseri.</li>
+      <li><strong>Tela sujeta con goma elástica</strong> — para fermentos que necesitan respirar, como la kombucha.</li>
+      <li><strong>Airlock o válvula</strong> — para anaeróbicos activos como el chucrut o el kimchi.</li>
+    </ul>
+    <div class="quote">El tarro de vidrio es el smartphone de nuestros abuelos: simple, transparente y nunca te traiciona.</div>
+  </section>
 
-      <p>Vivimos en una época donde la tecnología parece ofrecernos siempre el camino más rápido, más limpio y más cómodo. Y, sin embargo, en ese proceso, a veces olvidamos algo esencial: el conocimiento no empieza en las máquinas.</p>
+  <section class="bloque">
+    <h2>Kit mínimo: lo que realmente necesitas</h2>
+    <p>Olvida el laboratorio. Esto es lo que de verdad hace falta:</p>
+    <h3>Imprescindibles</h3>
+    <ul>
+      <li>Tarros de vidrio</li>
+      <li>Sal no yodada</li>
+      <li>Cuchillo afilado</li>
+      <li>Manos limpias</li>
+      <li>Paciencia</li>
+    </ul>
+    <p>Con esto puedes empezar hoy.</p>
+    <h3>Muy útiles cuando avanzas</h3>
+    <ul>
+      <li><strong>Un peso</strong> para mantener los vegetales sumergidos en salmuera</li>
+      <li><strong>Termómetro básico</strong> — imprescindible si haces fermentos lácticos como el reuteri</li>
+      <li><strong>Tela de queso o filtro de café</strong> — para colar, filtrar y tapar sin contaminar</li>
+    </ul>
+    <h3>Opcionales pero cómodos</h3>
+    <ul>
+      <li>Balanza de cocina para controlar el porcentaje de sal con precisión</li>
+      <li>Airlock casero — un globo con un pequeño agujero funciona</li>
+      <li>pHmetro, solo si quieres medir y registrar todo</li>
+    </ul>
+    <div class="quote">No necesitas un laboratorio. Necesitas presencia y respeto por lo vivo.</div>
+  </section>
 
-      <p>Empieza en nosotros.</p>
+  <section class="bloque">
+    <h2>Errores comunes — y cómo no repetirlos</h2>
+    <p><strong>Tarros con restos de fermentación anterior.</strong> Es una invitación a una fiesta donde no todos los invitados son bienvenidos. Lavar siempre, sin excepción.</p>
+    <p><strong>Jabón perfumado o lejía.</strong> No distinguen entre lo que quieres eliminar y lo que quieres cultivar. Neutralidad ante todo — agua caliente, vinagre, jabón neutro.</p>
+    <p><strong>Trapos con olor a suavizante.</strong> Un trapo que huele a primavera artificial sobre un tarro de kombucha es un intruso silencioso. Reserva trapos neutros solo para esto.</p>
+    <p><strong>No dejar espacio para el CO₂.</strong> Un tarro cerrado herméticamente durante una fermentación muy activa puede convertirse en un pequeño experimento de física que no esperabas.</p>
+    <p><strong>Fiar todo a la vista.</strong> El aspecto puede engañar. El olor, casi nunca.</p>
+    <div class="quote">Huele siempre antes de probar. Tu nariz es el detector de mentiras más antiguo del planeta.</div>
+  </section>
 
-      <p>En nuestras manos. En nuestros sentidos. En la capacidad de observar, oler, tocar y entender lo que tenemos delante.</p>
+</div>
 
-      <p>La tecnología puede ser una aliada extraordinaria cuando tiene un propósito claro. Pero cuando se utiliza sin conciencia, corre el riesgo de sustituir experiencias que, en realidad, son la base del aprendizaje.</p>
-
-      <p>Fermentar no es solo transformar alimentos. Es aprender a leer procesos vivos. Es desarrollar intuición. Es reconectar con ritmos que no necesitan electricidad para existir.</p>
-
-      <p><strong>Que la tecnología acompañe al conocimiento, pero que nunca lo reemplace.</strong></p>
-    </section>
-
-    <!-- BLOQUE 2 — existente -->
-    <section class="bloque">
-      <h2>Fermentar a mano vs. con máquina</h2>
-
-      <h3>Lo que ganas con la máquina</h3>
-      <ul>
-        <li>Temperatura constante y precisa</li>
-        <li>Menos fallos al principio</li>
-        <li>Comodidad total</li>
-        <li>Resultados repetibles</li>
-        <li>Práctica cuando hay poco tiempo o grandes cantidades</li>
-      </ul>
-
-      <p>No hay nada incorrecto en esto. Es una herramienta útil.</p>
-
-      <h3>Lo que cedes sin darte cuenta</h3>
-      <ul>
-        <li><strong>El ritual:</strong> tocar, observar, ajustar</li>
-        <li><strong>Diversidad microbiana:</strong> menos variación, menos riqueza</li>
-        <li><strong>Intuición:</strong> se aprende menos del proceso</li>
-        <li><strong>Simplicidad:</strong> dependencia de la máquina</li>
-        <li><strong>Sabor:</strong> menos complejo, menos vivo</li>
-      </ul>
-
-      <p>La máquina te da consistencia. El tarro te da presencia.</p>
-
-      <p>No se trata de elegir uno para siempre, sino de saber qué necesitas en cada momento.</p>
-    </section>
-
-    <!-- BLOQUE 3 — nuevo -->
-    <section class="bloque">
-      <h2>Higiene: respeto al proceso vivo</h2>
-
-      <p>Fermentar no es cocinar en un quirófano. La higiene en la fermentación no es una obsesión por la esterilización — es algo más sutil y más interesante: es respeto al proceso vivo.</p>
-
-      <p>Demasiado limpio mata lo bueno. Demasiado sucio invita a lo malo. El equilibrio es el arte.</p>
-
-      <p>La lejía y los jabones antibacterianos fuertes no distinguen entre microbios patógenos y los que llevas cultivando con cariño. Los eliminan todos sin preguntar. Lo que necesitas es agua caliente y vinagre blanco, o jabón neutro sin perfume. Limpiar sin agredir.</p>
-
-      <p>Y esto se extiende a algo que casi nadie menciona: <strong>los trapos</strong>. Un trapo lavado con detergente perfumado y suavizante huele a química — y esa química llega a tu fermento. Para secar tarros, filtrar líquidos o tapar una kombucha, los trapos tienen que ser neutros, sin olor. Los míos los lavo frotando con agua y vinagre, o simplemente los reservo ya limpios de lavados anteriores sin productos. Tengo trapos específicos para fermentación y perfumería — trapos que no huelen a nada, porque cuando filtras un alcohol o cubres un cultivo vivo, cualquier residuo químico es un intruso.</p>
-
-      <div class="quote">
-        Limpias el recipiente como limpias tu mente antes de meditar: quitas lo viejo para dar espacio a lo nuevo.
-      </div>
-    </section>
-
-    <!-- BLOQUE 4 — nuevo -->
-    <section class="bloque">
-      <h2>Los tarros: tu templo de vidrio</h2>
-
-      <p>El vidrio lleva con nosotros miles de años y sigue siendo imbatible. No reacciona con los ácidos de la fermentación, no absorbe olores, no cede sustancias extrañas al cultivo. Y lo ves todo — el color, la textura, las burbujas, el momento exacto en que algo empieza a vivir dentro.</p>
-
-      <p>Para experimentar, tarros pequeños de 250–500 ml. Para producción habitual, 500 ml a 1 litro. Los tarros de conserva reciclados funcionan perfectamente — lávalos con agua hirviendo o ponlos diez minutos en el horno a 100 °C y están listos.</p>
-
-      <h3>Sobre las tapas</h3>
-      <ul>
-        <li><strong>Tapa hermética cerrada</strong> — para fermentos lácticos como el reuteri o el gasseri. Bien cerrado, sin movimientos durante la fermentación.</li>
-        <li><strong>Tela sujeta con goma elástica</strong> — para fermentos que necesitan respirar, como la kombucha o algunos vegetales. Que no huela a nada, como ya dijimos.</li>
-        <li><strong>Airlock o válvula</strong> — para anaeróbicos activos como el chucrut o el kimchi, donde el CO₂ necesita salir sin que entre oxígeno.</li>
-      </ul>
-
-      <div class="quote">
-        El tarro de vidrio es el smartphone de nuestros abuelos: simple, transparente y nunca te traiciona.
-      </div>
-    </section>
-
-    <!-- BLOQUE 5 — nuevo -->
-    <section class="bloque">
-      <h2>Kit mínimo: lo que realmente necesitas</h2>
-
-      <p>Olvida el laboratorio. Esto es lo que de verdad hace falta:</p>
-
-      <h3>Imprescindibles</h3>
-      <ul>
-        <li>Tarros de vidrio</li>
-        <li>Sal no yodada</li>
-        <li>Cuchillo afilado</li>
-        <li>Manos limpias</li>
-        <li>Paciencia</li>
-      </ul>
-      <p>Con esto puedes empezar hoy.</p>
-
-      <h3>Muy útiles cuando avanzas</h3>
-      <ul>
-        <li><strong>Un peso</strong> para mantener los vegetales sumergidos en salmuera — una piedra limpia, un tarro pequeño lleno de agua, o un peso específico de vidrio</li>
-        <li><strong>Termómetro básico</strong> — imprescindible si haces fermentos lácticos como el reuteri</li>
-        <li><strong>Tela de queso o filtro de café</strong> — para colar, filtrar y tapar sin contaminar</li>
-      </ul>
-
-      <h3>Opcionales pero cómodos</h3>
-      <ul>
-        <li>Balanza de cocina para controlar el porcentaje de sal con precisión</li>
-        <li>Airlock casero — un globo con un pequeño agujero funciona</li>
-        <li>pHmetro, solo si quieres medir y registrar todo</li>
-      </ul>
-
-      <div class="quote">
-        No necesitas un laboratorio. Necesitas presencia y respeto por lo vivo.
-      </div>
-    </section>
-
-    <!-- BLOQUE 6 — nuevo -->
-    <section class="bloque">
-      <h2>Errores comunes — y cómo no repetirlos</h2>
-
-      <p><strong>Tarros con restos de fermentación anterior.</strong> Es una invitación a una fiesta donde no todos los invitados son bienvenidos. Lavar siempre, sin excepción.</p>
-
-      <p><strong>Jabón perfumado o lejía.</strong> No distinguen entre lo que quieres eliminar y lo que quieres cultivar. Neutralidad ante todo — agua caliente, vinagre, jabón neutro.</p>
-
-      <p><strong>Trapos con olor a suavizante.</strong> Un trapo que huele a primavera artificial sobre un tarro de kombucha o un fermento lácteo es un intruso silencioso. Reserva trapos neutros solo para esto.</p>
-
-      <p><strong>No dejar espacio para el CO₂.</strong> Un tarro cerrado herméticamente durante una fermentación muy activa puede convertirse en un pequeño experimento de física que no esperabas. Deja siempre algo de espacio y asegúrate de que el gas tiene salida si el fermento lo necesita.</p>
-
-      <p><strong>Fiar todo a la vista.</strong> El aspecto puede engañar. El olor, casi nunca.</p>
-
-      <div class="quote">
-        Huele siempre antes de probar. Tu nariz es el detector de mentiras más antiguo del planeta.
-      </div>
-    </section>
-
-  </div>
-
-  <div class="footer-leaves" style="background-image: url('image/hojas.jpeg');"></div>
-
-</body>
-</html>
+<div class="footer-leaves" style="background-image: url('image/hojas.jpeg');"></div>
