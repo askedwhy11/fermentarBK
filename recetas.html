@@ -1,62 +1,14 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Recetas fermentadas</title>
-  <link rel="stylesheet" href="styles/styles.css">
+---
+layout: default
+title: Recetas
+---
 
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-
-    body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: var(--font-body);
-      line-height: 1.7;
-    }
-
-    h1, h2, h3 {
-      font-family: var(--font-display);
-      color: var(--gold);
-      margin-bottom: 22px;
-    }
-
-    .menu {
-      display: flex;
-      gap: 10px;
-      padding: 20px 15px;
-      flex-wrap: wrap;
-      justify-content: center;
-      background: rgba(10, 31, 20, 0.92);
-      position: sticky;
-      top: 0;
-    }
-
-    .menu a {
-      text-decoration: none;
-      padding: 11px 18px;
-      border-radius: 9999px;
-      background: linear-gradient(135deg, #c49b3f, #e6c76b);
-      color: #0a1f14;
-      font-family: var(--font-body);
-      font-weight: 700;
-      transition: all 0.3s ease;
-    }
-
-    .menu a:hover { transform: scale(1.05); }
-
-    .menu a.active {
-      background: var(--accent);
-      color: white;
-    }
-
+<style>
     .hero {
       max-width: 350px;
       margin: 25px auto;
       overflow: hidden;
     }
-
     .hero img {
       width: 100%;
       height: auto;
@@ -66,21 +18,18 @@
       display: block;
       margin: 0 auto;
     }
-
     .hero-text {
       padding: 50px 20px 30px;
       max-width: 620px;
       margin: 0 auto;
       text-align: center;
     }
-
     .title {
       font-family: var(--font-display);
       text-align: center;
       margin: 25px 0 10px;
       font-size: 2rem;
     }
-
     .quote {
       font-family: var(--font-display);
       font-size: 1.8rem;
@@ -93,12 +42,7 @@
       margin-left: auto;
       margin-right: auto;
     }
-
-    .hero-text p {
-      margin-bottom: 16px;
-      font-size: 1.06rem;
-    }
-
+    .hero-text p { margin-bottom: 16px; font-size: 1.06rem; }
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
@@ -107,7 +51,6 @@
       max-width: 1200px;
       margin: 0 auto;
     }
-
     .card {
       border-radius: 20px;
       overflow: hidden;
@@ -117,92 +60,72 @@
       transition: all 0.4s ease;
       box-shadow: 0 6px 18px rgba(0,0,0,0.4);
     }
-
     .card:hover {
       transform: translateY(-10px);
       box-shadow: 0 15px 30px rgba(230, 126, 34, 0.3);
     }
-
     .card img {
       width: 100%;
       height: 220px;
       object-fit: cover;
       transition: transform 0.4s ease;
     }
-
     .card:hover img { transform: scale(1.07); }
-
     .card-content { padding: 16px; }
-
     .card h3 {
       font-family: var(--font-display);
       font-size: 1.32rem;
       font-weight: 600;
     }
-  </style>
-</head>
+</style>
 
-<body>
+<div class="hero">
+  <img src="image/mifoto.jpeg" alt="Tu retrato - fermentos vivos">
+</div>
 
-  <div class="menu">
-    <a href="index.html">Home</a>
-    <a href="fermento.html">Fermentación</a>
-    <a href="recetas.html" class="active">Recetas</a>
-    <a href="perfumes.html">Perfumes</a>
-    <a href="laboratorio.html">Herramientas</a>
-  </div>
+<div class="hero-text">
+  <h1 class="title">Recetas fermentadas</h1>
+  <p class="quote">"Todo es fermentable, hasta el ketchup".</p>
+  <p>Esa cita que escuché en un video del Dr. William Davies, experto en microbioma, me impresionó.</p>
+  <p>No te compliques. Empieza con lo básico, varía con lo que te guste y experimenta.</p>
+  <p>Fermentar es un acto de soberanía sobre tu propio ecosistema interno.</p>
+  <p>Disfruta el proceso. Échale tiempo, cariño y un poco de conspiración sana. Y comparte 🌿</p>
+</div>
 
-  <div class="hero">
-    <img src="image/mifoto.jpeg" alt="Tu retrato - fermentos vivos">
-  </div>
+<div class="grid">
+  <a href="recetas/reuteri.html" class="card">
+    <img src="image/reuteri.jpeg" alt="Fermento L. reuteri y L. gasseri">
+    <div class="card-content">
+      <h3>L. reuteri &amp; L. gasseri</h3>
+      <p style="font-size:0.85rem; color:#b7d3c1; margin-top:6px;">Fermentación láctica prolongada · 36–38 °C · 24–36 h</p>
+      <p style="font-size:0.82rem; color:#b7d3c1; margin-top:4px;">Leche entera · inulina · cultivo. Textura densa, sabor intenso.</p>
+      <p style="font-size:0.82rem; color:#c49b3f; margin-top:8px; font-weight:600;">Ver guía completa y método detallado →</p>
+    </div>
+  </a>
 
-  <div class="hero-text">
-    <h1 class="title">Recetas fermentadas</h1>
-    <p class="quote">"Todo es fermentable, hasta el ketchup".</p>
-    <p>Esa cita que escuché en un video del Dr. William Davies, experto en microbioma, me impresionó.</p>
-    <p>No te compliques. Empieza con lo básico, varía con lo que te guste y experimenta.</p>
-    <p>Fermentar es un acto de soberanía sobre tu propio ecosistema interno.</p>
-    <p>Disfruta el proceso. Échale tiempo, cariño y un poco de conspiración sana. Y comparte 🌿</p>
-  </div>
+  <a href="recetas/garbanzos.html" class="card">
+    <img src="image/garbanzos.jpeg" alt="Garbanzos fermentados vivos">
+    <div class="card-content">
+      <h3>Garbanzos fermentados</h3>
+    </div>
+  </a>
 
-  <div class="grid">
-    <!-- AÑADIR dentro del div.grid en recetas.html, junto a las otras tarjetas -->
+  <a href="recetas/zanahorias.html" class="card">
+    <img src="image/zanahorias.jpeg" alt="Zanahorias fermentadas crujientes">
+    <div class="card-content">
+      <h3>Zanahorias fermentadas</h3>
+    </div>
+  </a>
 
-<a href="recetas/reuteri.html" class="card">
-  <img src="image/reuteri.jpeg" alt="Fermento L. reuteri y L. gasseri">
-  <div class="card-content">
-    <h3>L. reuteri &amp; L. gasseri</h3>
-    <p style="font-size:0.85rem; color:#b7d3c1; margin-top:6px;">Fermentación láctica prolongada · 36–38 °C · 24–36 h</p>
-    <p style="font-size:0.82rem; color:#b7d3c1; margin-top:4px;">Leche entera · inulina · cultivo. Textura densa, sabor intenso.</p>
-    <p style="font-size:0.82rem; color:#c49b3f; margin-top:8px; font-weight:600;">Ver guía completa y método detallado →</p>
-  </div>
-</a>
-    <a href="recetas/garbanzos.html" class="card">
-      <img src="image/garbanzos.jpeg" alt="Garbanzos fermentados vivos">
-      <div class="card-content">
-        <h3>Garbanzos fermentados</h3>
-      </div>
-    </a>
+  <a href="recetas/natto.html" class="card">
+    <img src="image/natto.jpeg" alt="Natto casero con Bacillus subtilis">
+    <div class="card-content">
+      <h3>Natto — Bacillus subtilis</h3>
+      <p style="font-size:0.85rem; color:#b7d3c1; margin-top:6px;">Fermentación especial · 39–41 °C · 18–24 h</p>
+      <p style="font-size:0.82rem; color:#b7d3c1; margin-top:4px;">Soja, judías, garbanzos · almidón · calor y humedad.</p>
+      <p style="font-size:0.82rem; color:#c49b3f; margin-top:8px; font-weight:600;">Ver guía completa y método detallado →</p>
+    </div>
+  </a>
+</div>
 
-    <a href="recetas/zanahorias.html" class="card">
-      <img src="image/zanahorias.jpeg" alt="Zanahorias fermentadas crujientes">
-      <div class="card-content">
-        <h3>Zanahorias fermentadas</h3>
-      </div>
-    </a>
-    <!-- AÑADIR dentro del div.grid en recetas.html, junto a las otras tarjetas -->
-
-<a href="recetas/natto.html" class="card">
-  <img src="image/natto.jpeg" alt="Natto casero con Bacillus subtilis">
-  <div class="card-content">
-    <h3>Natto — Bacillus subtilis</h3>
-    <p style="font-size:0.85rem; color:#b7d3c1; margin-top:6px;">Fermentación especial · 39–41 °C · 18–24 h</p>
-    <p style="font-size:0.82rem; color:#b7d3c1; margin-top:4px;">Soja, judías, garbanzos · almidón · calor y humedad.</p>
-    <p style="font-size:0.82rem; color:#c49b3f; margin-top:8px; font-weight:600;">Ver guía completa y método detallado →</p>
-  </div>
-</a>
-    
-  </div>
- <div class="footer-leaves" style="background-image: url('image/hojas.jpeg');"></div>
- </body>
-</html>
+<div class="footer-leaves" style="background-image: url('image/hojas.jpeg');"></div>
