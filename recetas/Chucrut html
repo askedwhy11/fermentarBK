@@ -1,0 +1,97 @@
+---
+layout: default
+title: Chucrut casero
+---
+
+<section class="container bloque">
+  <a class="back" href="{{ '/recetas.html' | relative_url }}">← Volver a recetas</a>
+
+  <h1>🥬 Chucrut casero<br><em>Base viva y adaptable</em></h1>
+
+  <p>El chucrut es uno de los fermentos más antiguos y accesibles. Solo necesitas col, sal y tiempo — el resto lo hacen las bacterias que ya viven en la propia verdura.</p>
+
+  <h2>🧾 Ingredientes</h2>
+
+  <div class="technical">
+    <ul style="padding-left: 0; list-style: none; line-height: 2.4;">
+      <li>🥬 <strong>1 col blanca (repollo) fresca</strong></li>
+      <li>🧂 <strong>20 g de sal por cada kilo de col</strong> — aproximadamente un 2%</li>
+    </ul>
+    <p style="margin-top: 10px;"><strong>Opcional, a tu elección:</strong></p>
+    <ul style="padding-left: 18px; line-height: 2.2;">
+      <li>Zanahoria rallada</li>
+      <li>Semillas de alcaravea o comino</li>
+      <li>Especias o ingredientes que quieras explorar</li>
+    </ul>
+  </div>
+
+  <h2>🔪 Preparación</h2>
+
+  <ul>
+    <li><strong>1. Cortar</strong><br>Retira las hojas externas — reserva una, la necesitarás después. Corta la col en tiras finas, todo lo fina que puedas.</li>
+
+    <li><strong>2. Salar</strong><br>Añade la sal y mezcla bien hasta que quede distribuida de forma uniforme por toda la col.</li>
+
+    <li><strong>3. Activar — el masaje</strong><br>No es solo masajear: hay que estrujar con fuerza. Ese líquido que la col empieza a soltar no es solo agua — es la salmuera natural donde viven las levaduras y enzimas que van a fermentar todo. Trabaja la col durante varios minutos hasta que se ablande y libere su propio jugo.<br><br>
+    <span class="highlight">👉 Aquí empieza todo: estás creando tu propia salmuera natural.</span><br><br>
+    Si quieres acelerar el proceso, puedes añadir un <a href="{{ '/glosario.html#starter' | relative_url }}" class="glosario-link">starter</a> — suero de kéfir o salmuera de otro fermento activo. Con la col no es necesario, porque ya tiene bacterias suficientes en su superficie, pero en la práctica acorta mucho los tiempos y da más seguridad al arranque.</li>
+  </ul>
+
+  <h2>🫙 Fermentación</h2>
+
+  <ul>
+    <li><strong>4. Envasar</strong><br>Introduce la col en un tarro de cristal, presionando bien capa a capa. El líquido debe cubrir completamente la col. Si no es suficiente, añade <a href="{{ '/glosario.html#salmuera' | relative_url }}" class="glosario-link">salmuera</a> extra (agua + sal al 2%).</li>
+
+    <li><strong>5. Proteger</strong><br>Coloca la hoja reservada encima a modo de tapa natural y, si quieres, un peso que mantenga la col sumergida.<br><br>
+    <span class="highlight">👉 Lo importante: todo debe quedar bajo el líquido.</span></li>
+  </ul>
+
+  <h2>⏳ Tiempo — variable según tu intención</h2>
+
+  <div class="technical">
+    <ul style="padding-left: 0; list-style: none; line-height: 2.4;">
+      <li>🟢 <strong>3–5 días</strong> → suave, fresco, poco ácido</li>
+      <li>🟡 <strong>1–2 semanas</strong> → equilibrado, el punto más versátil</li>
+      <li>🟠 <strong>3+ semanas</strong> → más profundo, más complejo, más vivo</li>
+    </ul>
+    <p style="margin-top: 8px;">📍 Temperatura ambiente, sin luz directa.</p>
+  </div>
+
+  <h2>👃 Observación — parte clave del proceso</h2>
+
+  <div class="technical">
+    <strong>Señales positivas</strong>
+    <ul style="padding-left: 18px; margin-top: 8px; line-height: 2;">
+      <li>Burbujas activas en los primeros días</li>
+      <li>Aroma ácido limpio, como vinagre suave</li>
+      <li>Textura firme al morder</li>
+    </ul>
+
+    <strong style="margin-top: 16px; display: block;">Señales de alerta</strong>
+    <ul style="padding-left: 18px; margin-top: 8px; line-height: 2;">
+      <li>Olor desagradable, pútrido o muy diferente al ácido limpio</li>
+      <li>Moho de colores — verde, negro o rosa — hay que descartar el tarro</li>
+      <li>Moho blanco superficial — es normal, se retira con una cuchara y no afecta al fermento de abajo</li>
+    </ul>
+  </div>
+
+  <h2>❄️ Conservación</h2>
+
+  <p>Cuando el sabor te encaje, pasa el tarro a la nevera para ralentizar la fermentación y mantenerlo en ese punto.</p>
+
+  <h2>✨ Variaciones — espacio creativo</h2>
+
+  <div class="technical">
+    <ul style="padding-left: 18px; line-height: 2.4;">
+      <li>🌶️ <strong>Raíz cálida</strong> → jengibre, cúrcuma</li>
+      <li>🧄 <strong>Tradicional</strong> → ajo, laurel</li>
+      <li>🍎 <strong>Suave</strong> → manzana</li>
+      <li>🟣 <strong>Visual</strong> → remolacha</li>
+      <li>🌿 <strong>Intuitivo</strong> → lo que tengas, lo que sientas</li>
+    </ul>
+    <p style="margin-top: 12px;">Puedes jugar también con cortes más finos o gruesos, tiempos distintos, mezclas por capas. No hay una sola forma correcta.</p>
+  </div>
+
+  <p style="margin-top: 2rem;">← <a href="{{ '/recetas.html' | relative_url }}" style="color:#c49b3f; font-weight:bold;">Volver a Recetas</a></p>
+
+</section> 
